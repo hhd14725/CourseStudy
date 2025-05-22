@@ -1549,6 +1549,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   jumpPower: 80
+  jumpStaminaCost: 20
   groundLayerMask:
     serializedVersion: 2
     m_Bits: 55
