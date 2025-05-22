@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     [Header("Movement")]
     public float moveSpeed;
     public float jumpPower;
+    public float jumpStaminaCost;
     private Vector2 curMovementInput;
     public LayerMask groundLayerMask;
 
@@ -90,7 +91,11 @@ public class PlayerController : MonoBehaviour
     {
         if(context.phase == InputActionPhase.Started && isGrounded())
         {
-            _rigidbody.AddForce(Vector3.up * jumpPower, ForceMode.Impulse);
+            if(CharacterManager.Instance.Player.condition.UseStamina(jumpStaminaCost))
+            {
+                _rigidbody.AddForce(Vector3.up * jumpPower, ForceMode.Impulse);
+            }
+            
         }
     }
 

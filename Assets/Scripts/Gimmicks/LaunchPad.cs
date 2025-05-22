@@ -5,7 +5,7 @@ using UnityEngine;
 public class LaunchPad : MonoBehaviour
 {
     [Header("LaunchPad Settings")]
-    public float launchForce = 10f;
+    public float launchForce;
     Rigidbody _rigidbody;
 
     private void Start()
