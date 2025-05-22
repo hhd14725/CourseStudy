@@ -57,6 +57,11 @@ public class EquipTool : Equip
             {
                 resource.Gather(hit.point, hit.normal);
             }
+            else if(doesDealDamage && hit.collider.TryGetComponent(out NPC npc))
+            {
+                npc.TakePhysicalDamage(damage);
+            }
         }
+
     }
 }
