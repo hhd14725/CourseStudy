@@ -17,6 +17,10 @@ public class Resource : MonoBehaviour
             Instantiate(itemToGive.dropPrefab, hitpoint + Vector3.up, Quaternion.LookRotation(hitNormal, Vector3.up));
         
         }
+        if (capacity <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
   
 }
