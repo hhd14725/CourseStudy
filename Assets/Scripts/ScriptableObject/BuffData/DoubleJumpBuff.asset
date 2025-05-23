@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2d507b10d960e84780df442fe481087, type: 3}
-  m_Name: InvincibleBuff
+  m_Script: {fileID: 11500000, guid: 6b54afd7355b42d479c525c010cdeade, type: 3}
+  m_Name: DoubleJumpBuff
   m_EditorClassIdentifier: 
-  buffName: "\uBB34\uC801"
+  buffName: "\uC5F0\uC18D\uC810\uD504"
+  maxJumpCount: 3
   duration: 5

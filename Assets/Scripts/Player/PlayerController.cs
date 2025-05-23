@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     public float jumpStaminaCost;
     private Vector2 curMovementInput;
     public LayerMask groundLayerMask;
+    private int jumpCount = 0;
 
 
     [Header("Look")]
@@ -26,10 +27,12 @@ public class PlayerController : MonoBehaviour
     public Action inventory;
 
     private Rigidbody _rigidbody;
+    private PlayerBuffHandler _buffHandler;
 
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody>();
+        _buffHandler = GetComponent<PlayerBuffHandler>();
     }
 
     private void Start()
@@ -39,6 +42,7 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         Move();
+        jumpCount = 0;
     }
 
     private void LateUpdate()
@@ -89,11 +93,13 @@ public class PlayerController : MonoBehaviour
 
     public void OnJumpInput(InputAction.CallbackContext context)
     {
-        if(context.phase == InputActionPhase.Started && isGrounded())
+        int allowExtraJumps = (_buffHandler != null) ? _buffHandler.MaxExtraJumps : 0;
+        if(context.phase == InputActionPhase.Started && (isGrounded() || jumpCount < allowExtraJumps))
         {
             if(CharacterManager.Instance.Player.condition.UseStamina(jumpStaminaCost))
             {
                 _rigidbody.AddForce(Vector3.up * jumpPower, ForceMode.Impulse);
+                jumpCount++;
             }
             
         }
