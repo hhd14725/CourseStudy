@@ -15,8 +15,7 @@ public class SpeedBoostBuff : BuffData
     {
       
         float originalSpeed = handler.Controller.moveSpeed;
-        handler.Controller.moveSpeed *= multiplier;
-        Debug.Log($"Applying Speed Boost Buff {handler.Controller.moveSpeed}");
+        handler.Controller.moveSpeed *= multiplier;        
         yield return new WaitForSeconds(duration);
         handler.Controller.moveSpeed = originalSpeed;
     }

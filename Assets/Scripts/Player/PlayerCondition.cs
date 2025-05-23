@@ -17,6 +17,12 @@ public class PlayerCondition : MonoBehaviour , IDamageable
 
     public float noHungerHealthDecay;
     public event Action onTakeDamage;
+    private PlayerBuffHandler _buffHandler;
+
+    private void Awake()
+    {
+        _buffHandler = GetComponent<PlayerBuffHandler>();
+    }
 
     private void Update()
     {
@@ -52,6 +58,10 @@ public class PlayerCondition : MonoBehaviour , IDamageable
 
     public void TakePhysicalDamage(int damage)
     {
+        if(_buffHandler.IsInvincible)
+        {
+            return;
+        }
         Health.Subtract(damage);
         onTakeDamage?.Invoke();
     }

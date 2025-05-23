@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2ea9bb337dc8984a992d84a273432b2, type: 3}
-  m_Name: SpeedBoostBuff
+  m_Script: {fileID: 11500000, guid: d2d507b10d960e84780df442fe481087, type: 3}
+  m_Name: InvincibleBuff
   m_EditorClassIdentifier: 
-  buffName: "\uC2A4\uD53C\uB4DC\uBD80\uC2A4\uD2B8"
-  multiplier: 3
+  buffName: 
   duration: 5

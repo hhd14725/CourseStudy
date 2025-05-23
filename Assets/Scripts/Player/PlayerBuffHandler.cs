@@ -7,8 +7,8 @@ public class PlayerBuffHandler : MonoBehaviour
 {
     public PlayerController Controller { get; private set; }
 
-    public bool IsInvicible { get; private set; }
-    public int MaxExtraJumps { get; private set; }
+    public bool IsInvincible { get; set; }
+    public int MaxExtraJumps { get; set; }
 
     private void Awake()
     {

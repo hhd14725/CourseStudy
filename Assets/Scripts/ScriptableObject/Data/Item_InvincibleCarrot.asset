@@ -9,9 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2ea9bb337dc8984a992d84a273432b2, type: 3}
-  m_Name: SpeedBoostBuff
+  m_Script: {fileID: 11500000, guid: c8c26184e4c000b468d63784d18b7447, type: 3}
+  m_Name: Item_InvincibleCarrot
   m_EditorClassIdentifier: 
-  buffName: "\uC2A4\uD53C\uB4DC\uBD80\uC2A4\uD2B8"
-  multiplier: 3
-  duration: 5
+  displayName: 
+  description: 
+  type: 0
+  icon: {fileID: 0}
+  dropPrefab: {fileID: 0}
+  canStack: 0
+  maxStackAmount: 0
+  consumables: []
+  buffs: []
+  equipPrefab: {fileID: 0}
