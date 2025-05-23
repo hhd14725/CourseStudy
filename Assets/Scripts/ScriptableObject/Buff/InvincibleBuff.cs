@@ -7,8 +7,14 @@ using UnityEngine;
 public class InvincibleBuff : BuffData
 {
 
-    [Header("Duration")]
+    [Header("지속시간")]
     public float duration = 5f;
+
+    public override float Duration => duration;
+    public override string GetDisplayValue()
+    {
+        return $"{duration}초 무적";
+    }
 
 
     public override IEnumerator ApplyBuff(PlayerBuffHandler handler)

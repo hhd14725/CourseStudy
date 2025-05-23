@@ -10,6 +10,12 @@ public class DoubleJumpBuff : BuffData
 
     [Header("Duration")]
     public float duration = 5f;
+
+    public override float Duration => duration;
+    public override string GetDisplayValue()
+    {
+        return $"{maxJumpCount}ȸ";
+    }
     public override IEnumerator ApplyBuff(PlayerBuffHandler handler)
     {
         handler.MaxExtraJumps += maxJumpCount;
