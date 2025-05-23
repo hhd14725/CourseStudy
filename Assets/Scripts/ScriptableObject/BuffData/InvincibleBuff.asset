@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: InvincibleBuff
   m_EditorClassIdentifier: 
   buffName: "\uBB34\uC801"
+  icon: {fileID: 21300000, guid: e12e1a0e4a7453c42932e826264d0473, type: 3}
   duration: 5

@@ -21,6 +21,7 @@ public class BuffUIManager : MonoBehaviour
     {
         if (entries.ContainsKey(buff))
             return;
+        Debug.Log("버프아이콘 생성");
         GameObject go = Instantiate(buffEntryPrefab, buffContainer);
         BuffEntry entry = go.GetComponent<BuffEntry>();
         entry.Initialize(buff);

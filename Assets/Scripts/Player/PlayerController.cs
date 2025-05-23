@@ -43,6 +43,7 @@ public class PlayerController : MonoBehaviour
     {
         Move();
         jumpCount = 0;
+        Debug.Log(_rigidbody.velocity);
     }
 
     private void LateUpdate()

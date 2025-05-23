@@ -24,8 +24,7 @@ public class PlayerBuffHandler : MonoBehaviour
         if(buff != null)
         {
             Debug.Log("Apply Buff");
-            OnBuffStart?.Invoke(buff);
-            StartCoroutine(buff.ApplyBuff(this));
+            OnBuffStart?.Invoke(buff);           
             StartCoroutine(EndBuffCoroutine(buff));
 
         }

@@ -14,7 +14,7 @@ public class SpeedBoostBuff : BuffData
     public override float Duration => duration;
     public override string GetDisplayValue()
     {
-      return $"{multiplier : f1}น่";
+      return $"{multiplier}น่";
     }
 
     public override IEnumerator ApplyBuff(PlayerBuffHandler handler)

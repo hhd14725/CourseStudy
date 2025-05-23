@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: DoubleJumpBuff
   m_EditorClassIdentifier: 
   buffName: "\uC5F0\uC18D\uC810\uD504"
+  icon: {fileID: 21300000, guid: 43046426625693b41b1c2ee199d4c15a, type: 3}
   maxJumpCount: 3
   duration: 5
