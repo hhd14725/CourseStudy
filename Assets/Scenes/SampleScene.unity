@@ -1555,8 +1555,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 55
   cameraContainer: {fileID: 313191055}
-  minXLook: -85
-  maxXLook: 85
+  minXLook: -80
+  maxXLook: 80
   lookSensitivity: 0.1
   canLook: 1
 --- !u!114 &427045052
@@ -3039,7 +3039,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 759
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -6397,7 +6397,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4591490882700201484, guid: 18ab3246a1fc2a84db6e0a269df48a27, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.73
+      value: 0.413
       objectReference: {fileID: 0}
     - target: {fileID: 4591490882700201484, guid: 18ab3246a1fc2a84db6e0a269df48a27, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6486,7 +6486,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7177664328871336036, guid: a40c191bf8058e342981021b0c1581e0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.164
+      value: 10.563
       objectReference: {fileID: 0}
     - target: {fileID: 7177664328871336036, guid: a40c191bf8058e342981021b0c1581e0, type: 3}
       propertyPath: m_LocalPosition.y
