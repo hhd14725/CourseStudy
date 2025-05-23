@@ -197,6 +197,12 @@ public class UIInventory : MonoBehaviour
                         break;
                 }
             }
+
+            var handler = CharacterManager.Instance.Player.GetComponent<PlayerBuffHandler>();
+            foreach(var buff in selectedItem.buffs)
+            {
+                handler?.ApplyBuff(buff);
+            }
         }
         RemoveSelectedItem();
 
